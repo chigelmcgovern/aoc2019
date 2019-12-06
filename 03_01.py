@@ -20,8 +20,5 @@ def find_all_points(segments):
             coordinates.add((x, y))
     return coordinates
 
-
-line_one_points, line_two_points = find_all_points(line_1), find_all_points(line_2)
-intersections = line_one_points.intersection(line_two_points)
-
+intersections = find_all_points(line_1).intersection(find_all_points(line_2))
 print(min([abs(x_coordinate) + abs(y_coordinate) for (x_coordinate, y_coordinate) in intersections]))

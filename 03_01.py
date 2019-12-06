@@ -6,10 +6,7 @@ direction_map_y = {'U': 1, 'D': -1, 'L': 0, 'R': 0}
 
 
 def parse_segment(direction):
-    return {
-        'direction': direction[0],
-        'distance': int(direction[1:])
-    }
+    return {'direction': direction[0], 'distance': int(direction[1:])}
 
 
 def find_all_points(segments):

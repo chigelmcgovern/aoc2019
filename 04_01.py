@@ -19,7 +19,7 @@ def never_decrease(password):
 
 def possible_password_count(password_range):
     possible_password_counter = 0
-    for password in puzzle_input:
+    for password in password_range:
         if adjacent_doubles(password) and never_decrease(password):
             possible_password_counter += 1
     print(possible_password_counter)
